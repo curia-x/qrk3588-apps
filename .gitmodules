@@ -1,0 +1,3 @@
+[submodule "quest_os/QuestOS"]
+	path = quest_os/QuestOS
+	url = https://github.com/curia-x/QuestOS.git

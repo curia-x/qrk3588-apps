@@ -1,0 +1,18 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
+config BR2_PACKAGE_QUEST_OS
+	bool "Quest OS application"
+	depends on BR2_aarch64
+	depends on BR2_USE_MMU
+	depends on BR2_USE_WCHAR
+	depends on BR2_TOOLCHAIN_HAS_THREADS
+	depends on BR2_TOOLCHAIN_GCC_AT_LEAST_8
+	depends on !BR2_STATIC_LIBS
+	select BR2_PACKAGE_QEMU
+	select BR2_PACKAGE_QEMU_SYSTEM
+	select BR2_PACKAGE_QEMU_SYSTEM_KVM
+	select BR2_PACKAGE_QEMU_SYSTEM_TCG
+	select BR2_PACKAGE_QEMU_CHOOSE_TARGETS
+	select BR2_PACKAGE_QEMU_TARGET_AARCH64
+	help
+	  Run Quest OS and its user processes as an application on Linux.
+	  The quest_os command supports KVM and TCG software emulation.

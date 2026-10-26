@@ -1,0 +1,10 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
+# Host facilities used by the installed QEMU KVM and TCG application.
+CONFIG_VIRTUALIZATION=y
+CONFIG_KVM=y
+CONFIG_EPOLL=y
+CONFIG_EVENTFD=y
+CONFIG_SIGNALFD=y
+CONFIG_TIMERFD=y
+CONFIG_SHMEM=y
+CONFIG_TMPFS=y

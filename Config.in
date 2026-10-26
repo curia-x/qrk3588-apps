@@ -1,0 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
+menu "QRK3588 applications"
+source "$BR2_EXTERNAL_QRK_APPS_PATH/quest_os/Config.in"
+endmenu
